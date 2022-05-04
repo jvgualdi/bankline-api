@@ -1,6 +1,7 @@
 package com.dio.santander.banklineapi.model;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +18,7 @@ public class Correntista {
 	private String cpf;
 	@Column(length = 60)
 	private String nome;
+	@Embedded
 	private Conta conta;
 	
 	
